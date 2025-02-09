@@ -1,0 +1,21 @@
+import DomainBox from "../components/DomainBox"
+
+export default function Domains() {
+  const domains = [
+    { name: "solvedby3d.com", description: "Short description for solvedby3d.com" },
+    { name: "verone3d.com", description: "Short description for verone3d.com" },
+    // Add more domains here
+  ]
+
+  return (
+    <div className="decorative-border">
+      <h1 className="text-4xl font-bold mb-8 text-center">My Domains</h1>
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+        {domains.map((domain) => (
+          <DomainBox key={domain.name} domain={domain} />
+        ))}
+      </div>
+    </div>
+  )
+}
+

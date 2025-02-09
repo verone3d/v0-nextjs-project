@@ -20,3 +20,7 @@ body {
   background-position: 0 0, 0 10px, 10px -10px, -10px 0px;
 }
 
+.page-content {
+  @apply max-w-4xl mx-auto;
+}
+
